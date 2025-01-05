@@ -12,3 +12,5 @@ Email ID: praveenms588@gmail.com
 GitHub Profile: praveenms588
 
 LinkedIN Profile: praveenms588
+
+Task 1: Task is to refer to C based and RISCV based lab videos and execute the task of compiling the C code using gcc and riscv compiler
