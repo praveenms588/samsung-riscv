@@ -1,7 +1,7 @@
 # samsung-riscv
 The program is based on the RISC-V architecture and uses open-source tools to teach people about VLSI chip design and RISC-V. The instructor for this internship is Kunal Ghosh Sir.
 
-#Basic Details
+# Basic Details
 
 Name: Praveen M S
 
