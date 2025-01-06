@@ -29,9 +29,10 @@ This repository demonstrates the processes involved in compiling C programs and 
    gedit sum_1ton.c
 ![sum1ton_code_snippet](https://github.com/user-attachments/assets/04232a53-ca09-4015-85fb-3a441fc0b7dd)
 ### Steps to Compile a .c File :
- sh
+ ```sh
  gcc sum_1ton.c
  ./a.out
+```
 ### Compilation and execution complete.
 
 ![sum1ton_output](https://github.com/user-attachments/assets/24681ff5-a2ab-45c2-a6f5-bbb96f3e8058)
