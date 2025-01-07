@@ -51,7 +51,11 @@ cat sum_1ton.c
 4. Compile the C program for RISC-V architecture using:
  ```sh
 riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum_1ton.o sum_1ton.c
+riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ```
+![O1 and Ofast](https://github.com/user-attachments/assets/463e27c5-465e-4dd3-ae1c-899aae08c371)
+
+
 5. Disassemble the object file to view its assembly code using:
  ```sh
 riscv64-unknown-elf-objdump -d sum_1ton.o
