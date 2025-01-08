@@ -69,5 +69,7 @@ riscv64-unknown-elf-objdump -d sum_1ton.o
 2. -march=rv64i: Indicates the 64-bit RISC-V base integer instruction set architecture.
 
 3. -O1: Enables basic optimization for better performance without significantly increasing compilation time.
+  
+4. -Ofast: Focuses on maximizing performance by enabling aggressive optimizations, potentially at the cost of standard compliance.
 
-4. riscv64-unknown-elf-objdump: A tool for disassembling RISC-V binaries to examine the code structure and debug it effectively.
+5. riscv64-unknown-elf-objdump: A tool for disassembling RISC-V binaries to examine the code structure and debug it effectively.
