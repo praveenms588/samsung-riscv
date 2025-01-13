@@ -15,7 +15,7 @@ The program is based on the RISC-V architecture and uses open-source tools for V
 
 
 <details>
-<summary> <b>Task 1:</b></summary>
+<summary><b>Task 1:</b></summary>
 <br>
 Task is to refer to C based and RISCV based lab videos and execute the task of compiling the C code using gcc and riscv compiler
 	
@@ -98,9 +98,9 @@ Commands:
 riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum.o sum.c
 riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum.o sum.c
 ```
-![Debugging O1](https://github.com/user-attachments/assets/bbe095b5-3675-4d59-990a-fd950a0b3cca)
+![Debugging O1](https://github.com/user-attachments/assets/905f4204-0931-4323-8e43-253e8a263ad1)
 
-![Debugging Ofast](https://github.com/user-attachments/assets/507818d0-2605-4473-a0ce-182c81f88900)
+![Debugging Ofast](https://github.com/user-attachments/assets/94d7b72b-af71-44a5-be81-52251a9d8e75)
 
 
 **Running on SPIKE**
