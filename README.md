@@ -3,21 +3,17 @@ The program is based on the RISC-V architecture and uses open-source tools for V
 
 ## Basic Details
 
-Name: Praveen M S
-
-College: Vidyavardhaka College of Engineering
-
-Email ID: praveenms588@gmail.com
-
-GitHub Profile: praveenms588
-
-LinkedIN Profile: praveenms588
+**Name:** Praveen M S
+**College:** Vidyavardhaka College of Engineering
+**Email ID:** praveenms588@gmail.com
+**GitHub Profile:** praveenms588
+**LinkedIN Profile:** praveenms588
 
 
 <details>
-<summary> <b>Task 1:</b> Task is to refer to C based and RISCV based lab videos and execute the task of compiling the C code using gcc and riscv compiler</summary>
+<summary> <b>Task 1:</b></summary>
 <br>
-	
+Task is to refer to C based and RISCV based lab videos and execute the task of compiling the C code using gcc and riscv compiler	
 **C and RISC-V Based Labs**
 
 This repository demonstrates the processes involved in compiling C programs and generating assembly code using both a standard GCC compiler and a RISC-V GCC compiler. It includes comprehensive steps and explanations to guide users through each stage of the compilation and debugging workflow.
@@ -82,7 +78,43 @@ riscv64-unknown-elf-objdump -d sum_1ton.o
 <details>
 <summary><b>Task 2:</b></summary>
 <br>
-This is how you dropdown.
+	
+**Debugging with SPIKE: Comparing -O1 and -Ofast Optimizations**
+
+**-O1:** A moderate optimization for balanced performance.
+
+**-Ofast:** A high-speed optimization that prioritizes performance over strict standards
+
+**add.c File**
+![sum code](https://github.com/user-attachments/assets/8989da87-e34d-4330-af71-683b478b9642)
+
+Commands:
+```
+riscv64-unknown-elf-gcc -O1 -o sum.o sum.c
+riscv64-unknown-elf-gcc -Ofast -o sum.o sum.c
+```
+![Debugging O1](https://github.com/user-attachments/assets/bbe095b5-3675-4d59-990a-fd950a0b3cca)
+
+![Debugging Ofast](https://github.com/user-attachments/assets/507818d0-2605-4473-a0ce-182c81f88900)
+
+
+**Running on SPIKE**
+
+Commands:
+```
+spike pk sum.o
+spike -d pk sum.o
+```
+
+Objdump:
+```
+riscv64-unknown-elf-objdump -d sum.o
+```
+![Objdump -O1](https://github.com/user-attachments/assets/057054e4-16f8-42b0-a7cb-d51486dfa856)
+
+![Objdump -Ofast](https://github.com/user-attachments/assets/b7874894-8ed7-42a7-907d-deee09188ec4)
+
+
 </details>
 
 
