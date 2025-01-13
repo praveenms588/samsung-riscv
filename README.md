@@ -4,16 +4,21 @@ The program is based on the RISC-V architecture and uses open-source tools for V
 ## Basic Details
 
 **Name:** Praveen M S
+
 **College:** Vidyavardhaka College of Engineering
+
 **Email ID:** praveenms588@gmail.com
+
 **GitHub Profile:** praveenms588
+
 **LinkedIN Profile:** praveenms588
 
 
 <details>
 <summary> <b>Task 1:</b></summary>
 <br>
-Task is to refer to C based and RISCV based lab videos and execute the task of compiling the C code using gcc and riscv compiler	
+Task is to refer to C based and RISCV based lab videos and execute the task of compiling the C code using gcc and riscv compiler
+	
 **C and RISC-V Based Labs**
 
 This repository demonstrates the processes involved in compiling C programs and generating assembly code using both a standard GCC compiler and a RISC-V GCC compiler. It includes comprehensive steps and explanations to guide users through each stage of the compilation and debugging workflow.
@@ -90,8 +95,8 @@ riscv64-unknown-elf-objdump -d sum_1ton.o
 
 Commands:
 ```
-riscv64-unknown-elf-gcc -O1 -o sum.o sum.c
-riscv64-unknown-elf-gcc -Ofast -o sum.o sum.c
+riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum.o sum.c
+riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum.o sum.c
 ```
 ![Debugging O1](https://github.com/user-attachments/assets/bbe095b5-3675-4d59-990a-fd950a0b3cca)
 
