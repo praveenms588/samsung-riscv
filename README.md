@@ -108,12 +108,15 @@ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum.o sum.c
 Commands:
 ```
 spike pk sum.o
+```
+To open Interactive Debugging
+```
 spike -d pk sum.o
 ```
-
 Objdump:
 ```
 riscv64-unknown-elf-objdump -d sum.o
+riscv64-unknown-elf-objdump -d sum.o | less
 ```
 ![Objdump -O1](https://github.com/user-attachments/assets/057054e4-16f8-42b0-a7cb-d51486dfa856)
 
