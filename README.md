@@ -13,7 +13,6 @@ The program is based on the RISC-V architecture and uses open-source tools for V
 
 **LinkedIN Profile:** praveenms588
 
-
 <details>
 <summary><b>Task 1:</b></summary>
 <br>
