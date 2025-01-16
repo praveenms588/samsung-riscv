@@ -308,7 +308,8 @@ U-type (Upper Immediate) instructions load immediate data into the destination r
 | rd         | 5 bits| Destination register                  |
 | imm[31:12] | 20 bits| Upper immediate value                  |
 
-![b type](https://github.com/user-attachments/assets/b056bfbe-6a7a-473f-a687-6fa6af3ed201)
+![u type](https://github.com/user-attachments/assets/d5223eda-40fd-4418-8860-39f350330311)
+
 
 ---
 
