@@ -328,7 +328,7 @@ J-type (Jump-type) instructions implement jump operations, often used for loops.
 
 
 ---
-</details>
+
 
 This repository contains a list of 15 unique RISC-V instructions extracted from the assembly code along with their corresponding 32-bit instruction codes. These instructions cover different instruction formats, such as **U-type**, **I-type**, **J-type**, **B-type**, and **R-type**.
 
@@ -355,7 +355,7 @@ This README contains a table of 15 unique RISC-V instructions, their machine cod
 | **andi a1, a1, 0xFF** (Logical AND Immediate) | 0010011     | I-type       | 0x00a30313       | 00000000001000110000001100010011             |
 | **mul a2, a3, a4** (Multiply)       | 0110011     | R-type       | 0x00b30333       | 00000000001000110011000010010011             |
 
-
+</details>
 
 
 
