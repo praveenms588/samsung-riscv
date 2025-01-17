@@ -330,5 +330,32 @@ J-type (Jump-type) instructions implement jump operations, often used for loops.
 ---
 </details>
 
+This repository contains a list of 15 unique RISC-V instructions extracted from the assembly code along with their corresponding 32-bit instruction codes. These instructions cover different instruction formats, such as **U-type**, **I-type**, **J-type**, **B-type**, and **R-type**.
+
+
+# RISC-V Instructions
+
+This README contains a table of 15 unique RISC-V instructions, their machine codes, opcodes, formats, and instruction binaries.
+
+| **Instruction**                 | **Opcode**  | **Format**   | **Machine Code** | **Instruction Binary**                        |
+|----------------------------------|-------------|--------------|------------------|-----------------------------------------------|
+| **lui a0, 0x21** (Load Upper Immediate) | 0110111     | U-type       | 0x00021537       | 00000000001000010001000000010011             |
+| **li a3, 15** (Load Immediate)       | 0010011     | I-type       | 0x00f00693       | 00000000011100000000011001001111             |
+| **addi a0, a0, 352** (Add Immediate) | 0010011     | I-type       | 0x16050513       | 00010110000001010000010100010011             |
+| **j 103f4** (Jump)                  | 1101111     | J-type       | 0x3300006f       | 00000011001100000000000001101111             |
+| **auipc a5, 0xffff0** (Add Upper Immediate to PC) | 0010111     | U-type       | 0xffff0797       | 11111111111100000111000010010111             |
+| **addi a5, a5, -200** (Add Immediate) | 0010011     | I-type       | 0xf3878793       | 11110000100001111000011100111001             |
+| **beqz a5, 100e0** (Branch if Equal Zero) | 1100011     | B-type       | 0x00078863       | 00000000000001111000100001100011             |
+| **auipc a0, 0x0** (Add Upper Immediate to PC) | 0010111     | U-type       | 0x00000517       | 00000000000000000000000001010111             |
+| **j 1019c** (Jump)                  | 1101111     | J-type       | 0x0c00006f       | 00000000110000000000000001101111             |
+| **addi a0, gp, 1904** (Add Immediate) | 0010011     | I-type       | 0x11050513       | 00010001000001010000010100110011             |
+| **sub a2, a2, a0** (Subtract)       | 0110011     | R-type       | 0x40a60633       | 01000000101001100000011000110011             |
+| **ret** (Pseudo-instruction for `jalr x0, x1, 0`) | 1100111     | I-type       | 0x00008067       | 00000000000000000000000001100111             |
+| **auipc gp, 0x13** (Add Upper Immediate to PC) | 0010111     | U-type       | 0x00013197       | 00000000000000010011000110010111             |
+| **andi a1, a1, 0xFF** (Logical AND Immediate) | 0010011     | I-type       | 0x00a30313       | 00000000001000110000001100010011             |
+| **mul a2, a3, a4** (Multiply)       | 0110011     | R-type       | 0x00b30333       | 00000000001000110011000010010011             |
+
+
+
 
 
