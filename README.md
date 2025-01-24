@@ -357,8 +357,9 @@ This README contains a table of 15 unique RISC-V instructions, their machine cod
 
 </details>
 <details>
-<summary><b>Task 4:</b>Task is to Settinf Up the Simulation Environment Run Functional Simulation</summary>
+<summary><b>Task 4:</b>Task is to Set Up the Simulation Environment and Run Functional Simulation</summary>
 <br>
+	
 **4. FUNCTIONAL SIMULATION**
 
 **4.1 About iverilog and gtkwave**
