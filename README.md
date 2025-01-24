@@ -448,7 +448,8 @@ $ ./iiitb_rv32i
 
  Full 5-stage instruction pipeline and pc-increment description Waveform
  
- <img width="1325" alt="full-pipeline-description" src="https://user-images.githubusercontent.com/110079631/183015739-3666a275-557b-43a4-b024-542e0aeb7975.png">
+![FULL 5 STAGE](https://github.com/user-attachments/assets/719d2d6a-88a6-4521-9935-4f5c6d31fb13)
+
 </details>
 
 
