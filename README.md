@@ -398,7 +398,8 @@ $ ./iiitb_rv32i
  
  Instruction 1:add r6,r2,r1
  
- <img width="1282" alt="add r6 r1 r1" src="https://user-images.githubusercontent.com/110079631/183015273-602663b9-2160-4fae-8abb-9830bae4d313.png">
+ ![ADD](https://github.com/user-attachments/assets/586412bd-efe8-4062-a902-e42cae6c7f43)
+
 
  Instruction 2:sub r7,r1,r2
  
@@ -406,23 +407,28 @@ $ ./iiitb_rv32i
 
  Instruction 3:and r8,r1,r3
  
-<img width="1282" alt="and r8 r1 r3" src="https://user-images.githubusercontent.com/110079631/183015364-3276b933-ae6c-4732-80a6-7df250793fc5.png">
+![AND](https://github.com/user-attachments/assets/184e9459-0326-46e2-b6c7-dd081636bfe0)
+
 
  Instruction 4:or r9,r2,r5
  
-<img width="1294" alt="or r9 r2 r5" src="https://user-images.githubusercontent.com/110079631/183015379-fb008837-dc05-408f-830c-bb7a4b9f4161.png">
+![OR](https://github.com/user-attachments/assets/b2da64c3-3a97-4dc0-8901-1573d97385a7)
+
 
  Instruction 5:xor r10,r1,r4
  
- <img width="1293" alt="xor r10 r1 r4" src="https://user-images.githubusercontent.com/110079631/183015406-e0827f05-9f44-4145-873f-c0d033c79821.png">
+![XOR](https://github.com/user-attachments/assets/184e33be-f1d7-4e91-83b2-64080e9fc653)
+
 
  Instruction 6:slt r11,r2,r4
  
- <img width="1290" alt="slt r11 r2 r4" src="https://user-images.githubusercontent.com/110079631/183015434-d57f71e8-e785-4fac-9989-a45f49a2a23e.png">
+![SLT](https://github.com/user-attachments/assets/293ebe8e-d997-4e9f-8812-5015c8827596)
+
 
  Instruction 7:addi r12,r4,5
  
- <img width="1285" alt="addi r12 r4 5" src="https://user-images.githubusercontent.com/110079631/183015460-f481f20e-16e3-42f6-8c79-1e3ed4227dd2.png">
+![ADDI](https://github.com/user-attachments/assets/1441f388-533d-4d00-b904-2cd7647c8737)
+
 
  Instruction 8:sw r3,r1,2
  
@@ -437,22 +443,8 @@ $ ./iiitb_rv32i
  After branching, performing
  Instruction 11:add r14,r2,r2
  
- <img width="1287" alt="beq r0 r0 15 add r14 r2 r2" src="https://user-images.githubusercontent.com/110079631/183015593-549d8ce8-bf33-46de-aec0-d5cd825697d6.png">
+![BEQ](https://github.com/user-attachments/assets/43fc1344-5bbc-4c33-9d1b-2f1f2d6b4234)
 
- Instruction 12:bne r0,r1,20
- 
- After branching, performing
- Instruction 13:addi r12,r4,5
- 
- <img width="1287" alt="bne r0 r1 20 addi r12 r4 5" src="https://user-images.githubusercontent.com/110079631/183015635-313bc6b2-c3b7-4408-8816-029add92103f.png">
-
- Instruction 14:sll r15,r1,r2(2)
- 
- <img width="1322" alt="sll r15 r1 r2(2)" src="https://user-images.githubusercontent.com/110079631/183015681-d14dd5b6-f7aa-4d36-ada8-a34a24eef091.png">
-
- Instruction 15:srl r16,r14,r2(2)
- 
- <img width="1291" alt="srl r16 r14 r2(2)" src="https://user-images.githubusercontent.com/110079631/183015708-1a8708a7-3dc8-43fc-91c8-8ed09ff31a2a.png">
 
  Full 5-stage instruction pipeline and pc-increment description Waveform
  
