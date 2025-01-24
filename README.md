@@ -357,7 +357,7 @@ This README contains a table of 15 unique RISC-V instructions, their machine cod
 
 </details>
 <details>
-<summary><b>Task 4:</b>Task is to Set Up the Simulation Environment and Run Functional Simulation</summary>
+<summary><b>Task 4:</b>By making use of RISCV Core: Verilog Netlist and Testbench, perform an experiment of Functional Simulation and observe the waveforms</summary>
 <br>
 	
 **4. FUNCTIONAL SIMULATION**
