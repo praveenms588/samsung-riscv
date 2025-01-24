@@ -403,7 +403,8 @@ $ ./iiitb_rv32i
 
  Instruction 2:sub r7,r1,r2
  
-<img width="1280" alt="sub r7 r1 r2" src="https://user-images.githubusercontent.com/110079631/183015332-c78f4f90-5809-46e4-b16e-2e57f1c99843.png">
+![SUB](https://github.com/user-attachments/assets/a0eceee9-4a6f-4050-89d5-c2923509551d)
+
 
  Instruction 3:and r8,r1,r3
  
@@ -430,19 +431,12 @@ $ ./iiitb_rv32i
 ![ADDI](https://github.com/user-attachments/assets/1441f388-533d-4d00-b904-2cd7647c8737)
 
 
- Instruction 8:sw r3,r1,2
+ Instruction 8:lw r13,r1,2
  
- <img width="1280" alt="sw r3 r1 2" src="https://user-images.githubusercontent.com/110079631/183015497-a6878767-c8be-4a91-a3cb-b63aecc28346.png">
+![LW](https://github.com/user-attachments/assets/5db2f15c-7cf8-496b-af93-89649c25ae43)
 
- Instruction 9:lw r13,r1,2
- 
- <img width="1295" alt="lw r13 r1 2" src="https://user-images.githubusercontent.com/110079631/183015564-e0624f70-4007-49e0-a484-bfaf40b472b0.png">
+ Instruction 9:beq r0,r0,15
 
- Instruction 10:beq r0,r0,15
- 
- After branching, performing
- Instruction 11:add r14,r2,r2
- 
 ![BEQ](https://github.com/user-attachments/assets/43fc1344-5bbc-4c33-9d1b-2f1f2d6b4234)
 
 
