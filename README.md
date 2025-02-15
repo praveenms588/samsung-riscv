@@ -447,3 +447,63 @@ $ ./iiitb_rv32i
 </details>
 
 
+<summary> <b>Task 5:</b> This task involves designing an 8-bit Arithmetic Logic Unit (ALU) for the VSDSquadron Mini RISC-V development board. The ALU should support fundamental arithmetic and logic operations such as addition, subtraction, AND, OR, and XOR. You will define the ALU architecture, determine input/output requirements, and plan the pin mapping. A functional block diagram should be created to illustrate the internal structure of the ALU.</summary>  
+<br>
+
+
+# 🚀 8-Bit ALU Implementation using VSDSquadron Mini RISC-V Board
+
+## 📖 Project Overview
+This project implements an **8-bit Arithmetic Logic Unit (ALU)** on the **VSDSquadron Mini RISC-V Board**.  
+The ALU supports arithmetic and logic operations, with input control via buttons and results displayed on LEDs.
+
+### 🎯 ALU Operations:
+✅ **Arithmetic:** Addition, Subtraction  
+✅ **Logic:** AND, OR, XOR, Left Shift  
+✅ **Overflow Handling:** Buzzer alert  
+
+---
+
+## 🔧 Required Components  
+| Component | Quantity | Description |
+|-----------|----------|-------------|
+| **VSDSquadron Mini Board** | 1 | RISC-V SoC-based development board |
+| **Push Buttons** | 4 | Inputs for A, B, and operation selection |
+| **Toggle Switch** | 1 | Selects Arithmetic/Logic mode |
+| **LEDs (8-bit Output)** | 8 | Displays ALU result |
+| **Buzzer (Optional)** | 1 | Alerts overflow |
+| **Resistors (1kΩ)** | 8 | Limits current for LEDs |
+| **Breadboard & Jumper Wires** | - | For connections |
+
+---
+
+## 📊 Pin Connections  
+
+| **Board Pin** | **Component** | **Purpose** |
+|--------------|-------------|-------------|
+| **GPIO0 - GPIO7** | **8 LEDs** | Display ALU result |
+| **GPIO8, GPIO9** | **Push Buttons** | Input A and B |
+| **GPIO10, GPIO11** | **Push Buttons** | Operation selection |
+| **GPIO12** | **Toggle Switch** | Select Arithmetic/Logic mode |
+| **GPIO13** | **Buzzer (Optional)** | Overflow indicator |
+
+---
+
+## 📷 General block diagram of 8 bit ALU
+![block-diagram-of-8-bit-alu-l](https://github.com/user-attachments/assets/c669a3ef-f4db-46bf-aef8-7bd78a025939)
+
+
+### 🔹 Pinout Diagram:
+- A **clear schematic** showing GPIO pins for LEDs, buttons, and the VSDSquadron board.
+
+### 🔹 Circuit Connection:
+- A **diagram using PowerPoint or Fritzing** to illustrate wiring.
+
+🖼️ *(Upload your images in the GitHub repo and use the following format to display them:)*  
+```markdown
+![Pinout Diagram](images/pinout.png)
+![Circuit Connection](images/circuit.png)
+```
+</details>
+
+---
