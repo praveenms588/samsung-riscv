@@ -626,4 +626,4 @@ To save energy, lights in a data center could automatically turn OFF when motion
 During the VSD Squadron mini Internship, I embarked on a journey exploring various aspects of VLSI system design on the RISC-V architecture, alongside open-source EDA tools.
 
 </details>
----
+
