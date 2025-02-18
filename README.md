@@ -485,13 +485,14 @@ An **automatic light system** is a setup designed to automatically control the l
 
 
 ## Pin connection diagram
+![pin diagram](https://github.com/user-attachments/assets/0132c936-da48-480c-8b10-70ad68d7e426)
 
-![Automatic-light-system circuit diagram](https://github.com/user-attachments/assets/bfd0cca4-c559-4201-921b-378f1be785f1)
 
 ---
 ## breadboard connections
 
-![physical connections on breadboard](https://github.com/user-attachments/assets/989f1c29-0fc7-4bb4-a938-f870a1d14c26)
+![circuit](https://github.com/user-attachments/assets/dee2d305-be14-418e-8e32-351a6874c7bd)
+
 
 ---
 ## Working  
