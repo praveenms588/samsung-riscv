@@ -506,3 +506,124 @@ The ALU supports arithmetic and logic operations, with input control via buttons
 ```
 </details>
 
+<details>
+<summary> <b>Task 6:</b>The Automatic Light System uses the VSDSquadron Mini RISC-V Board, an IR sensor, and an LED for motion-based lighting control. The IR sensor detects movement, triggering the LED to blink three times before staying ON. If no motion is detected, the LED turns ON. This system is ideal for home automation, security, offering smart, hands-free lighting control.</summary> 
+<br>
+
+## Project Implementation  
+
+### Steps to Implement:  
+1. **Hardware Setup:**  
+   - Connect the **IR sensor** to the board's GPIO pins.  
+   - Wire an **LED** to indicate motion detection.  
+   - Use a **breadboard** for easy prototyping and secure connections.  
+
+2. **Software Development:**  
+   - Write the **C firmware** to read the IR sensor output.  
+   - Configure the GPIO pins for input (IR sensor) and output (LED).  
+   - Implement logic to **blink the LED three times** upon detecting motion.  
+   - Keep the LED **OFF** as long as movement is detected.  
+   - Turn the LED **ON** after a delay when no movement is present.  
+
+3. **Compilation & Upload:**  
+   - Compile the code using a **RISC-V compatible toolchain**.  
+   - Flash the program onto the **VSDSquadron Mini Board**.  
+
+4. **Testing & Debugging:**  
+   - Test the system in different lighting conditions.  
+   - Adjust sensor sensitivity if needed.   
+
+### Expected Output:  
+- If motion is detected for a certain period, the LED automatically **turns OFF**. 
+- If no motion is detected for a certain period, the LED automatically **turns ON**.  
+
+This implementation ensures **automatic lighting control**, **indicate the proper process**, and **security enhancements** for various applications.
+---
+
+## Code Implementation  
+```c
+#include <ch32v00x.h>
+#include <debug.h>
+
+void GPIO_Config(void)
+{
+    GPIO_InitTypeDef GPIO_InitStructure = {0};
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
+    
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
+    
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
+}
+
+int main(void)
+{
+    uint8_t IR = 0;
+    uint8_t set = 1;
+    uint8_t reset = 0;
+    uint8_t a = 0;
+    
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+    SystemCoreClockUpdate();
+    Delay_Init();
+    GPIO_Config();
+    
+    while (1)
+    {
+        IR = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_4);
+        if (IR == 1)
+        {
+            for (a = 0; a < 3; a++)
+            {
+                GPIO_WriteBit(GPIOD, GPIO_Pin_6, set);
+                Delay_Ms(200);
+                GPIO_WriteBit(GPIOD, GPIO_Pin_6, reset);
+                Delay_Ms(100);
+            }
+        }
+    }
+}
+```
+## Applications
+✅ **Energy-Saving Lighting in Offices and Homes:**
+
+When motion is detected, lights (LED) turn OFF to save energy, assuming that the motion indicates that someone is actively using the space (e.g., a person working in a room or moving around).
+When no motion is detected, lights automatically turn ON, ensuring lights are on in case the space is left unoccupied for a while.
+
+✅ **Interactive Displays or Exhibits:**
+
+In museums, galleries, or exhibitions, the LED lights could indicate the activity level in an area. Motion triggers the lights to turn OFF, suggesting interaction or focus, while no motion for a period means the area is idle, and the lights turn ON as an indicator of inactivity or to attract attention to an exhibit.
+
+✅ **Restroom or Bathroom Lights:**
+
+If someone is in the restroom (motion is detected), the light could turn OFF after a set time to conserve energy when they leave. When the restroom is idle for a set period, the light would turn ON to indicate it's available or to prevent it from being left in the dark.
+
+✅ **Smart Home Automation for Lighting:**
+
+The system could be set up to automatically adjust based on whether a room is in use. When the room is being actively used (motion is detected), the LED (or lights) would turn OFF. After a period of inactivity, the lights would turn ON, indicating that the space is empty or the user wants some light after inactivity.
+
+✅ **Warehouse or Storage Area Lighting:**
+
+In warehouses, lights could be automatically controlled to save energy. When motion (such as a worker’s movement) is detected, the lights can turn OFF to save power when there’s enough natural light or no activity. After a period of inactivity (no motion), the lights turn ON to ensure visibility.
+
+✅ **Smart Lighting in Parking Lots:**
+
+Motion triggers the lights to turn OFF to save energy when cars or people are not moving in the parking lot, and after a period of no motion, lights turn ON to indicate safety or to prevent dark spaces in parking areas.
+
+✅ **Dormitory or Shared Room Lighting:**
+
+In dorms or shared living spaces, the system can be set up to automatically turn lights OFF when students or roommates are moving around (indicating active use), and ON when there's no movement for a while, to ensure lighting is available when someone returns to the room.
+
+✅ **Motion Sensing in Data Centers:**
+
+To save energy, lights in a data center could automatically turn OFF when motion is detected in specific areas, indicating that those areas are being used or walked through. If there's no motion for a period (e.g., no maintenance or activity), the lights turn ON to signal that the area is idle or to alert for maintenance needs.
+
+# Conclusion
+During the VSD Squadron mini Internship, I embarked on a journey exploring various aspects of VLSI system design on the RISC-V architecture, alongside open-source EDA tools.
+
+</details>
+---
