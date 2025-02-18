@@ -447,63 +447,60 @@ $ ./iiitb_rv32i
 </details>
 
 <details>
-<summary> <b>Task 5:</b> This task involves designing an 8-bit Arithmetic Logic Unit (ALU) for the VSDSquadron Mini RISC-V development board. The ALU should support fundamental arithmetic and logic operations such as addition, subtraction, AND, OR, and XOR. You will define the ALU architecture, determine input/output requirements, and plan the pin mapping. A functional block diagram should be created to illustrate the internal structure of the ALU.</summary>  
+<summary> <b>Task 5:</b>An automatic light system is an intelligent setup designed to control lighting based on the presence or absence of individuals within its detection range. The system utilizes an IR sensor to continuously monitor its surroundings for any movement. When motion is detected, the system automatically turns OFF the LED, providing illumination. Additionally, to indicate the presence of movement. If no motion is detected for a certain period, the LED turns ON, ensuring process coninuation. This system is widely used in home automation, security lighting, Protected Area, Military surveillance, safety.</summary> 
 <br>
 
+# Automatic Light System using VSDSquadron Mini RISC-V Board
 
-# 🚀 8-Bit ALU Implementation using VSDSquadron Mini RISC-V Board
+## Project Overview
+An **automatic light system** is a setup designed to automatically control the lighting based on the presence or absence of individuals within its detection range. This system will also give an indication of motion detected by stoping the Blinking LED.
 
-## 📖 Project Overview
-This project implements an **8-bit Arithmetic Logic Unit (ALU)** on the **VSDSquadron Mini RISC-V Board**.  
-The ALU supports arithmetic and logic operations, with input control via buttons and results displayed on LEDs.
-
-### 🎯 ALU Operations:
-✅ **Arithmetic:** Addition, Subtraction  
-✅ **Logic:** AND, OR, XOR, Left Shift  
-✅ **Overflow Handling:** Buzzer alert  
+### Features:
+✅ **Automatic Light Control**: Lights up based on motion detection  
+✅ **Motion Indication**: LED blinks OFF when motion is detected   
+✅ **Security and Automation**: Enhances convenience and safety  
 
 ---
 
-## 🔧 Required Components  
+## Required Components  
 | Component | Quantity | Description |
 |-----------|----------|-------------|
 | **VSDSquadron Mini Board** | 1 | RISC-V SoC-based development board |
-| **Push Buttons** | 4 | Inputs for A, B, and operation selection |
-| **Toggle Switch** | 1 | Selects Arithmetic/Logic mode |
-| **LEDs (8-bit Output)** | 8 | Displays ALU result |
-| **Buzzer (Optional)** | 1 | Alerts overflow |
-| **Resistors (1kΩ)** | 8 | Limits current for LEDs |
-| **Breadboard & Jumper Wires** | - | For connections |
+| **IR Sensor** | 1 | Detects motion based on infrared radiation |
+| **LEDs** | 1 | Indicates motion detection |
+| **Breadboard** | 1 | For circuit connections |
+| **USB Cable** | 1 | Power and programming |
+| **Jumper Wires** | - | For making connections |
 
 ---
 
-## 📊 Pin Connections  
+## Pin Connections  
 
-| **Board Pin** | **Component** | **Purpose** |
+| **Component** | **Board Pin** | **Purpose** |
 |--------------|-------------|-------------|
-| **GPIO0 - GPIO7** | **8 LEDs** | Display ALU result |
-| **GPIO8, GPIO9** | **Push Buttons** | Input A and B |
-| **GPIO10, GPIO11** | **Push Buttons** | Operation selection |
-| **GPIO12** | **Toggle Switch** | Select Arithmetic/Logic mode |
-| **GPIO13** | **Buzzer (Optional)** | Overflow indicator |
+| **VCC of IR Sensor** | **3.2V** | Power supply |
+| **GND of IR Sensor** | **GND** | Ground connection |
+| **OUT of IR Sensor** | **Pin 4** | Motion detection signal |
+| **LED** | **Pin 6** | Indicates motion detected |
+
+
+## Pin connection diagram
+
+![Automatic-light-system circuit diagram](https://github.com/user-attachments/assets/bfd0cca4-c559-4201-921b-378f1be785f1)
 
 ---
+## breadboard connections
 
-## 📷 General block diagram of 8 bit ALU
-![block-diagram-of-8-bit-alu-l](https://github.com/user-attachments/assets/c669a3ef-f4db-46bf-aef8-7bd78a025939)
+![physical connections on breadboard](https://github.com/user-attachments/assets/989f1c29-0fc7-4bb4-a938-f870a1d14c26)
 
+---
+## Working  
+- The **IR sensor** is placed in a location where it can detect motion within its range.
+- It continuously monitors infrared radiation for any changes caused by movement.
+- When an individual enters the detection range, the IR sensor sends a signal to the microcontroller.
+- Upon detecting motion, the system turns OFF the LED and blinks on when no motion Detected which indicates process will continue.
 
-### 🔹 Pinout Diagram:
-- A **clear schematic** showing GPIO pins for LEDs, buttons, and the VSDSquadron board.
-
-### 🔹 Circuit Connection:
-- A **diagram using PowerPoint or Fritzing** to illustrate wiring.
-
-🖼️ *(Upload your images in the GitHub repo and use the following format to display them:)*  
-```markdown
-![Pinout Diagram](images/pinout.png)
-![Circuit Connection](images/circuit.png)
-```
+---
 </details>
 
 <details>
