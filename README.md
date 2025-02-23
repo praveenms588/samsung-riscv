@@ -521,6 +521,33 @@ An **automatic light system** is a setup designed to automatically control the l
 | LED1 | PIN4 (PD4)        |
 | LED2 | PIN5 (PD5)        |
 | LED3 | PIN6 (PD6)        |
+
+## Truth Table
+
+| A1 | A0 | B1 | B0 | A > B | A = B | A < B |
+|----|----|----|----|-------|-------|-------|
+|  0 |  0 |  0 |  0 |   0   |   1   |   0   |
+|  0 |  0 |  0 |  1 |   0   |   0   |   1   |
+|  0 |  0 |  1 |  0 |   0   |   0   |   1   |
+|  0 |  0 |  1 |  1 |   0   |   0   |   1   |
+|  0 |  1 |  0 |  0 |   1   |   0   |   0   |
+|  0 |  1 |  0 |  1 |   0   |   1   |   0   |
+|  0 |  1 |  1 |  0 |   0   |   0   |   1   |
+|  0 |  1 |  1 |  1 |   0   |   0   |   1   |
+|  1 |  0 |  0 |  0 |   1   |   0   |   0   |
+|  1 |  0 |  0 |  1 |   1   |   0   |   0   |
+|  1 |  0 |  1 |  0 |   0   |   1   |   0   |
+|  1 |  0 |  1 |  1 |   0   |   0   |   1   |
+|  1 |  1 |  0 |  0 |   1   |   0   |   0   |
+|  1 |  1 |  0 |  1 |   1   |   0   |   0   |
+|  1 |  1 |  1 |  0 |   1   |   0   |   0   |
+|  1 |  1 |  1 |  1 |   0   |   1   |   0   |
+
+## Explanation
+- **A > B**: When A is greater than B, this column is `1`.
+- **A = B**: When A is equal to B, this column is `1`.
+- **A < B**: When A is less than B, this column is `1`.
+
 ### Steps to Implement:  
 1. **Hardware Setup:**  
    - Connect the **LEDs** to the board's GPIO pins.    
