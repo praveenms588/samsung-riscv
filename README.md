@@ -450,10 +450,13 @@ $ ./iiitb_rv32i
 <summary> <b>Task 5:</b>An 2-bit Comparator is designed to compare two-bit inputs and indicate the comparison result using LEDs. The system utilizes a 2-bit comparator to continuously evaluate the input values and control the output LEDs accordingly. This project is useful in digital logic applications, automation, and embedded system-based projects.</summary> 
 <br>
 
-# Automatic Indication System using VSDSquadron Mini RISC-V Board
+# 2-bit Comparator using VSDSquadron Mini RISC-V Board
 
 ## Project Overview
 An 2-bit Comparator is designed to compare two-bit inputs and indicate the comparison result using LEDs. The system utilizes a 2-bit comparator to continuously evaluate the input values and control the output LEDs accordingly. This project is useful in digital logic applications, automation, and embedded system-based projects.
+
+## Circuit Diagram
+![2-bit-Comparator-768x658](https://github.com/user-attachments/assets/001dbe67-4af1-445b-8862-3dff9540ee5f)
 
 ## Features
 ✅ **Automatic Comparison:** Compares two 2-bit values and provides output  
