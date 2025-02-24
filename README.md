@@ -447,61 +447,50 @@ $ ./iiitb_rv32i
 </details>
 
 <details>
-<summary> <b>Task 5:</b>An automatic light system is an intelligent setup designed to control lighting based on the presence or absence of individuals within its detection range. The system utilizes an IR sensor to continuously monitor its surroundings for any movement. When motion is detected, the system automatically turns OFF the LED, providing illumination. Additionally, to indicate the presence of movement. If no motion is detected for a certain period, the LED turns ON, ensuring process coninuation. This system is widely used in home automation, security lighting, Protected Area, Military surveillance, safety.</summary> 
+<summary> <b>Task 5:</b>An 2-bit Comparator is designed to compare two-bit inputs and indicate the comparison result using LEDs. The system utilizes a 2-bit comparator to continuously evaluate the input values and control the output LEDs accordingly. This project is useful in digital logic applications, automation, and embedded system-based projects.</summary> 
 <br>
 
-# Automatic Light System using VSDSquadron Mini RISC-V Board
+# Automatic Indication System using VSDSquadron Mini RISC-V Board
 
 ## Project Overview
-An **automatic light system** is a setup designed to automatically control the lighting based on the presence or absence of individuals within its detection range. This system will also give an indication of motion detected by stoping the Blinking LED.
+An 2-bit Comparator is designed to compare two-bit inputs and indicate the comparison result using LEDs. The system utilizes a 2-bit comparator to continuously evaluate the input values and control the output LEDs accordingly. This project is useful in digital logic applications, automation, and embedded system-based projects.
 
-### Features:
-✅ **Automatic Light Control**: Lights up based on motion detection  
-✅ **Motion Indication**: LED blinks OFF when motion is detected   
-✅ **Security and Automation**: Enhances convenience and safety  
+## Features
+✅ **Automatic Comparison:** Compares two 2-bit values and provides output  
+✅ **Visual Indication:** Three LEDs represent the comparison results  
+✅ **Reliable and Efficient:** Uses a RISC-V development board for processing  
 
----
+## Required Components
 
-## Required Components  
-| Component | Quantity | Description |
-|-----------|----------|-------------|
-| **VSDSquadron Mini Board** | 1 | RISC-V SoC-based development board |
-| **IR Sensor** | 1 | Detects motion based on infrared radiation |
-| **LEDs** | 1 | Indicates motion detection |
-| **Breadboard** | 1 | For circuit connections |
-| **USB Cable** | 1 | Power and programming |
-| **Jumper Wires** | - | For making connections |
+| **Component**          | **Quantity** | **Description**                                   |
+|------------------------|-------------|-------------------------------------------------|
+| VSDSquadron Mini Board | 1           | RISC-V SoC-based development board             |
+| 2-bit Comparator       | 1           | Compares two 2-bit values                      |
+| LEDs                  | 3           | Indicates comparison results                   |
+| Breadboard            | 1           | For circuit connections                        |
+| USB Cable             | 1           | Power and programming                          |
+| Jumper Wires          | -           | For making connections                         |
 
----
+## Working Principle
+- The system takes two 2-bit inputs (A and B) from the user.
+- The 2-bit comparator evaluates the values and determines whether A is greater than, equal to, or less than B.
+- Based on the comparison result, the corresponding LED is turned ON:
+  - **LED 1 ON** → A > B  
+  - **LED 2 ON** → A = B  
+  - **LED 3 ON** → A < B  
+- The system continuously monitors and updates the LED output as inputs change.
 
-## Pin Connections  
+## Setup Instructions
+1. Connect the components as per the pin configuration.
+2. Upload the comparator logic to the VSDSquadron Mini Board.
+3. Power the board using a USB cable.
+4. Provide the input values and observe the LED indications.
 
-| **Component** | **Board Pin** | **Purpose** |
-|--------------|-------------|-------------|
-| **VCC of IR Sensor** | **3.2V** | Power supply |
-| **GND of IR Sensor** | **GND** | Ground connection |
-| **OUT of IR Sensor** | **Pin 4** | Motion detection signal |
-| **LED** | **Pin 6** | Indicates motion detected |
+## Applications
+- Digital Logic Circuits
+- Embedded Systems
+- Automation and Control Systems
 
-
-## Pin connection diagram
-![pin diagram](https://github.com/user-attachments/assets/0132c936-da48-480c-8b10-70ad68d7e426)
-
-
----
-## breadboard connections
-
-![circuit](https://github.com/user-attachments/assets/dee2d305-be14-418e-8e32-351a6874c7bd)
-
-
----
-## Working  
-- The **IR sensor** is placed in a location where it can detect motion within its range.
-- It continuously monitors infrared radiation for any changes caused by movement.
-- When an individual enters the detection range, the IR sensor sends a signal to the microcontroller.
-- Upon detecting motion, the system turns OFF the LED and blinks on when no motion Detected which indicates process will continue.
-
----
 </details>
 
 <details>
