@@ -456,7 +456,8 @@ $ ./iiitb_rv32i
 An 2-bit Comparator is designed to compare two-bit inputs and indicate the comparison result using LEDs. The system utilizes a 2-bit comparator to continuously evaluate the input values and control the output LEDs accordingly. This project is useful in digital logic applications, automation, and embedded system-based projects.
 
 ## Circuit Diagram
-![2-bit-Comparator-768x658](https://github.com/user-attachments/assets/001dbe67-4af1-445b-8862-3dff9540ee5f)
+![Circuit_ Diagram](https://github.com/user-attachments/assets/41c171ae-1ffd-4a16-8c2e-5a9ca0d38196)
+
 
 ## Features
 ✅ **Automatic Comparison:** Compares two 2-bit values and provides output  
